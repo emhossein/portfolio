@@ -29,7 +29,7 @@ const Home = () => (
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
       >
-        Hello, I&apos;m a full-stack developer based in Iran!
+        Hello, I&apos;m a front-end developer based in Iran!
       </Box>
 
       <Box display={{ md: 'flex' }}>
