@@ -7,7 +7,7 @@ const Footer = () => {
       <Link href="https://github.com/craftzdog" target="_blank">
         Takuya Matsuyama
       </Link>
-      . All Rights Reserved.
+      .
     </Box>
   )
 }
