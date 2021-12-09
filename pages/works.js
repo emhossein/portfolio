@@ -10,6 +10,7 @@ import thumbBankist from '../public/images/works/bankist-eyecatch.png'
 import thumbQuiz from '../public/images/works/quiz-eyecatch.png'
 import thumbColor from '../public/images/works/color-generator-eyecatch.png'
 import thumbComfy from '../public/images/works/comfy-eyecatch.png'
+import whatsappClone from '../public/images/works/whatsapp_02.png'
 
 const Works = () => (
   <Layout title="Works">
