@@ -84,6 +84,15 @@ const Works = () => (
             A Single-Page-Application to use all I know just from React.
           </WorkGridItem>
         </Section>
+        <Section delay={0.6}>
+          <WorkGridItem
+            id="whatsappClone"
+            thumbnail={whatsappClone}
+            title="Whatsapp Clone"
+          >
+            Simple Whatsapp Clone.
+          </WorkGridItem>
+        </Section>
       </SimpleGrid>
     </Container>
   </Layout>
