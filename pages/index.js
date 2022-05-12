@@ -1,4 +1,5 @@
 import NextLink from 'next/link'
+import Image from 'next/image'
 import {
   Link,
   Container,
@@ -8,7 +9,8 @@ import {
   List,
   ListItem,
   Icon,
-  useColorModeValue
+  useColorModeValue,
+  chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
@@ -18,6 +20,10 @@ import Section from '../components/section'
 
 import { IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
 import { FaTelegram } from 'react-icons/fa'
+
+const ProfileImage = chakra(Image, {
+  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
+})
 
 const Home = () => (
   <Layout>
@@ -44,7 +50,26 @@ const Home = () => (
           mt={{ base: 4, md: 0 }}
           ml={{ md: 6 }}
           textAlign="center"
-        ></Box>
+        >
+          <Box
+            borderColor="whiteAlpha.800"
+            borderWidth={2}
+            borderStyle="solid"
+            w="100px"
+            h="100px"
+            display="inline-block"
+            borderRadius="full"
+            overflow="hidden"
+          >
+            <ProfileImage
+              src="/me2.jpg"
+              alt="Profile image"
+              borderRadius="full"
+              width="100%"
+              height="100%"
+            />
+          </Box>
+        </Box>
       </Box>
 
       <Section delay={0.1}>
@@ -86,8 +111,8 @@ const Home = () => (
           websites and interactive pages.
         </BioSection>
         <BioSection>
-          <BioYear>2020 to present</BioYear>
-          Keep learning and trying to achieve his dream.
+          <BioYear>2021 to present</BioYear>
+          Worked as a full-time Front-End developer at Samex.
         </BioSection>
       </Section>
 
